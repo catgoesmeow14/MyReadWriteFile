@@ -30,6 +30,7 @@
             android:background="@android:color/white"
             android:ems="10"
             android:hint="@string/title"
+            android:textStyle="bold"
             android:inputType="textPersonName|textNoSuggestions"
             android:padding="@dimen/tiny_margin" />
 
