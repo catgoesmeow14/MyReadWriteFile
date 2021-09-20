@@ -49,7 +49,6 @@ public class FileHelper {
         } catch (IOException e) {
             Log.e("login activity", "File tidak dapat dibuka: " + e.toString());
         }
-
         return ret;
     }
 }

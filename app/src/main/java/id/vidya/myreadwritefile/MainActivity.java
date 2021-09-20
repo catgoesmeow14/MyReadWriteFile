@@ -54,11 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 saveFile();
                 break;
         }
-
     }
 
     public void newFile() {
-
         editTitle.setText("");
         editContent.setText("");
 
@@ -69,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String text = FileHelper.readFromFile(this, title);
         editTitle.setText(title);
         editContent.setText(text);
+
         Toast.makeText(this, "Loading file '" + title + "'", Toast.LENGTH_SHORT).show();
     }
 
@@ -101,6 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String title = editTitle.getText().toString();
             String text = editContent.getText().toString();
             FileHelper.writeToFile(title, text, this);
+
             Toast.makeText(this, "Menyimpan file '" + editTitle.getText().toString() + "'", Toast.LENGTH_SHORT).show();
         }
     }
